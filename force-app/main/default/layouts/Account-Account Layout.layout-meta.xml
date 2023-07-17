@@ -45,6 +45,10 @@
                 <behavior>Edit</behavior>
                 <field>Sample_Field__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Sample_Field_Two__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
