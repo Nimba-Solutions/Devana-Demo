@@ -1,0 +1,28 @@
+minimum_cumulusci_version: '3.68.1'
+project:
+    name: Devana-Demo
+    package:
+        name: Devana-Demo
+        api_version: '55.0'
+    git:
+        default_branch: 'main'
+        prefix_feature: 'feature/'
+        prefix_beta: 'beta/'
+        prefix_release: 'release/'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Devana-Demo/tests
+            options:
+                outputdir: robot/Devana-Demo/results
+
+    robot_testdoc:
+        options:
+            path: robot/Devana-Demo/tests
+            output: robot/Devana-Demo/doc/Devana-Demo_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
